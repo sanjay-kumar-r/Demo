@@ -1,0 +1,28 @@
+
+url:- http://localhost:5007/api/Employees/Update
+
+type:- POST
+
+header:-
+
+User-Agent: Fiddler
+Content-Type: application/json
+
+body:-
+
+{
+   "Id":3,
+   "FirstName":"lisa1"
+}
+
+
+or
+
+{
+   "Id":3,
+   "FirstName":"lisa",
+   "LastName":"paul",
+   "Department":{
+      "Name":"SALES"
+   }
+}

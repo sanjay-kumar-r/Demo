@@ -1,0 +1,12 @@
+
+url:- http://localhost:5007/api/Employees
+
+type:- GET
+
+
+or
+
+
+url:- http://localhost:5007/api/Employees/1
+
+type:- GET

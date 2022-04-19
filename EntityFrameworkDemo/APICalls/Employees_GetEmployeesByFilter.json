@@ -1,0 +1,23 @@
+
+url:- http://localhost:5007/api/Employees/GetEmployeesByFilter
+
+type:- POST
+
+header:-
+
+User-Agent: Fiddler
+Content-Type: application/json
+
+body:-
+
+{
+   "Id":3,
+   "FirstName":"lisa"
+}
+
+
+or
+
+{
+   "FirstName":"lisa"
+}
