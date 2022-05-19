@@ -1,18 +1,6 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1.0/Users/",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "9001"
-        }
-      ],
-      "UpstreamPathTemplate": "/users",
-      "UpstreamHttpMethod": [ "Get" ]
-    },
-    {
       "DownstreamPathTemplate": "/api/customers/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -22,7 +10,8 @@
         }
       ],
       "UpstreamPathTemplate": "/customers",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Customers"
     },
     {
       "DownstreamPathTemplate": "/api/customers/{everything}",
@@ -34,7 +23,8 @@
         }
       ],
       "UpstreamPathTemplate": "/customers/{everything}",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Customers"
     },
     {
       "DownstreamPathTemplate": "/api/products",
@@ -46,7 +36,8 @@
         }
       ],
       "UpstreamPathTemplate": "/products",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Products"
     },
     {
       "DownstreamPathTemplate": "/api/products/{everything}",
@@ -58,7 +49,30 @@
         }
       ],
       "UpstreamPathTemplate": "/products/{everything}",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get" ],
+      "SwaggerKey": "Products"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Customers",
+      "Config": [
+        {
+          "Name": "Customers API",
+          "Version": "v1",
+          "Url": "http://localhost:5005/swagger/v1.0/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Products",
+      "Config": [
+        {
+          "Name": "Products API",
+          "Version": "v1",
+          "Url": "http://localhost:5003/swagger/v1.0/swagger.json"
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {

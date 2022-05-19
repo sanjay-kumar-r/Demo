@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFrameworkDemo</name>
+    </assembly>
+    <members>
+        <member name="M:EntityFrameworkDemo.Controllers.EmployeesController.Ping">
+            <summary>
+                Api to test if the service is running properly
+            </summary>
+            <returns>returns Pong response string</returns>
+            <remarks>
+            /Ping
+            returns string Pong
+            </remarks>
+            <response code="200">returns Pong controller response</response>
+        </member>
+        <member name="P:EntityFrameworkDemo.DTOs.Departments.Id">
+            <summary>
+            Department Id
+            </summary>
+        </member>
+        <member name="P:EntityFrameworkDemo.DTOs.Departments.Name">
+            <summary>
+            Department Name
+            </summary>
+        </member>
+        <member name="P:EntityFrameworkDemo.DTOs.Departments.IsDeleted">
+            <summary>
+            check if departnent is deleted
+            </summary>
+        </member>
+    </members>
+</doc>

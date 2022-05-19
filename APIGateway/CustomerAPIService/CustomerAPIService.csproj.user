@@ -5,5 +5,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>CustomerAPIService</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>D:\Demo\APIGateway\CustomerAPIService\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

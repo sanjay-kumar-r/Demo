@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
@@ -23,6 +24,9 @@ namespace EntityFrameworkDemo.DTOs
         [DataType(DataType.DateTime)]
         public DateTime? DOJ { get; set; }
 
+        [DataMember(Name = "DepartmentId")]
+        [ForeignKey("Department")]
+        public int DepartmentId { get; set; }
         [DataMember(Name = "Department")]
         public Departments Department { get; set; }
 

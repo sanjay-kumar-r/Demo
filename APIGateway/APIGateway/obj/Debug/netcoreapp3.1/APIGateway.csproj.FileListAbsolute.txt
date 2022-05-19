@@ -35,3 +35,16 @@ D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\OcelotConfigs\ocelot.devel
 D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Ocelot.Provider.Polly.dll
 D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Polly.dll
 D:\Demo\APIGateway\APIGateway\obj\Debug\netcoreapp3.1\APIGateway.csproj.AssemblyReference.cache
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\APIGateway.xml
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\Kros.Utils.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\MMLib.SwaggerForOcelot.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Demo\APIGateway\APIGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

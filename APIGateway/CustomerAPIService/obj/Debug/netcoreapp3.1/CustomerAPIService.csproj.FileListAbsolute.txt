@@ -18,3 +18,11 @@ D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService
 D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.dll
 D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.pdb
 D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.genruntimeconfig.cache
+D:\Demo\APIGateway\CustomerAPIService\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Demo\APIGateway\CustomerAPIService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Demo\APIGateway\CustomerAPIService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Demo\APIGateway\CustomerAPIService\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.csproj.AssemblyReference.cache
+D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.MvcApplicationPartsAssemblyInfo.cs
+D:\Demo\APIGateway\CustomerAPIService\bin\Debug\netcoreapp3.1\CustomerAPIService.xml
+D:\Demo\APIGateway\CustomerAPIService\obj\Debug\netcoreapp3.1\CustomerAPIService.csproj.CopyComplete

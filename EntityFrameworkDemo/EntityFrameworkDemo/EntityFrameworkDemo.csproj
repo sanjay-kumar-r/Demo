@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Demo\EntityFrameworkDemo\EntityFrameworkDemo\EntityFrameworkDemo.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Abp" Version="7.1.0" />
     <PackageReference Include="log4net" Version="2.0.14" />
@@ -12,16 +16,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WorkSpace\Library\DTOs\CommonDTOs\CommonDTOs.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\LoggerUtils\LoggerUtils.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\ServiceContracts\ServiceContracts.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\ServiceContracts\ServiceContracts\ServiceContracts.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\Utils\CommonUtils\CommonUtils.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\Utils\TraceUtils\TraceUtils.csproj" />
-    <ProjectReference Include="..\..\..\WorkSpace\Library\Utils\Utils.csproj" />
+    <ProjectReference Include="..\CommonDTOs\CommonDTOs.csproj" />
+    <ProjectReference Include="..\CommonUtils\CommonUtils.csproj" />
+    <ProjectReference Include="..\ServiceContracts\ServiceContracts.csproj" />
   </ItemGroup>
 
 

@@ -10,7 +10,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Result = EntityFrameworkDemo.DTOs.Result;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EntityFrameworkDemo.Controllers
 {
@@ -61,6 +60,15 @@ namespace EntityFrameworkDemo.Controllers
             //SetLogicalThreadContext();
         }
 
+        /// <summary>
+        ///     Api to test if the service is running properly
+        /// </summary>
+        /// <returns>returns Pong response string</returns>
+        /// <remarks>
+        /// /Ping
+        /// returns string Pong
+        /// </remarks>
+        /// <response code="200">returns Pong controller response</response>
         [HttpGet]
         [Route("Ping")]
         public string Ping()
@@ -69,6 +77,8 @@ namespace EntityFrameworkDemo.Controllers
         }
 
         [HttpGet]
+        [Route("")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public IEnumerable<Employees> Get()
         {
             try
@@ -76,7 +86,7 @@ namespace EntityFrameworkDemo.Controllers
                 logger.Log(LogLevel.INFO, "Employees.Get method called :", traceData);
                 return employeesRepository.GetEmployees();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 //printlog
                 throw;
@@ -84,7 +94,7 @@ namespace EntityFrameworkDemo.Controllers
         }
 
         [HttpGet("{id}")]
-        [Route("GetEmployee/{id}")]
+        //[Route("GetEmployee/{id}")]
         public IEnumerable<Employees> Get(int id)
         {
             try
@@ -100,7 +110,8 @@ namespace EntityFrameworkDemo.Controllers
 
         [HttpPost]
         [Route("GetEmployeesByFilter")]
-        public IEnumerable<Employees> GetEmployeesByFilter([FromBody]Employees emp)
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
+        public IEnumerable<Employees> GetEmployeesByFilter([FromBody] Employees emp)
         {
             try
             {
@@ -181,10 +192,10 @@ namespace EntityFrameworkDemo.Controllers
             }
         }
 
-        //// DELETE api/<EmployeesController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+        ////// DELETE api/<EmployeesController>/5
+        ////[HttpDelete("{id}")]
+        ////public void Delete(int id)
+        ////{
+        ////}
     }
 }

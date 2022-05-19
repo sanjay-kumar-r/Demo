@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace APIGateway
@@ -52,7 +53,21 @@ namespace APIGateway
             //        log.AddConsole(LogLevel.Debug);
             //    }).WithDictionaryHandle();
             //};
+            services.AddControllers();
             services.AddOcelot(Configuration);
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1.0", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "My API Gateway Service",
+                    Description = "Project to test My API Gateway Service",
+                    Version = "1.0"
+                });
+                var fileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
+                options.IncludeXmlComments(filePath);
+            });
+            services.AddSwaggerForOcelot(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +76,16 @@ namespace APIGateway
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(options =>
+                {
+                    options.SwaggerEndpoint("/swagger/v1.0/swagger.json", "My API Gateway Service Swagger");
+                    options.RoutePrefix = string.Empty;
+                });
+                app.UseSwaggerForOcelotUI(options =>
+                {
+                    options.PathToSwaggerGenerator = "/swagger/docs";
+                });
             }
 
             app.UseRouting();
@@ -68,19 +93,20 @@ namespace APIGateway
             await app.UseOcelot();
 
             //extras all below
-            //app.UseAuthorization();
-            //
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    //endpoints.MapControllers();
-            //    endpoints.MapGet("/", async context => {
-            //        await context.Response.WriteAsync("APIGateway :-> Hello World! \n env = " + env.EnvironmentName);
-            //    });
-            //});
-            app.Run(async (context) =>
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
             {
-                await context.Response.WriteAsync("APIGateway :-> Hello World! \n env = " + env.EnvironmentName);
+                //endpoints.MapControllers();
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("APIGateway :-> Hello World! \n env = " + env.EnvironmentName);
+                });
             });
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("APIGateway :-> Hello World! \n env = " + env.EnvironmentName);
+            //});
         }
     }
 }

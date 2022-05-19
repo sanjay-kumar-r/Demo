@@ -22,7 +22,8 @@ namespace APIGateway
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((host, config) =>
                 {
-                    var rootPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                    //var rootPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().Name);
+                    var rootPath = Directory.GetCurrentDirectory();
                     //config.SetBasePath(rootPath + Path.DirectorySeparatorChar + "OcelotConfigs");
                     var ocelotPath = rootPath + Path.DirectorySeparatorChar + "OcelotConfigs";
                     if (File.Exists(ocelotPath + Path.DirectorySeparatorChar + $"ocelot.{host.HostingEnvironment.EnvironmentName}.json"))

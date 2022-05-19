@@ -80,7 +80,7 @@ namespace EntityFrameworkDemo.Migrations
                     b.Property<DateTime?>("DOJ")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("DepartmentId")
+                    b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
@@ -104,7 +104,9 @@ namespace EntityFrameworkDemo.Migrations
                 {
                     b.HasOne("EntityFrameworkDemo.DTOs.Departments", "Department")
                         .WithMany()
-                        .HasForeignKey("DepartmentId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Department");
                 });

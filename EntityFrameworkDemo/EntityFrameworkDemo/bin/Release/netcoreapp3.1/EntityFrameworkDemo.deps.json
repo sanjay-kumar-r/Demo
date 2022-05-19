@@ -34,12 +34,9 @@
           "Abp": "7.1.0",
           "CommonDTOs": "1.0.0",
           "CommonUtils": "1.0.0",
-          "LoggerUtils": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.16",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.16",
           "ServiceContracts": "1.0.0",
-          "TraceUtils": "1.0.0",
-          "Utils": "1.0.0",
           "log4net": "2.0.14",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2257,7 +2254,8 @@
           "Microsoft.AspNet.WebApi.Core": "5.2.8",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "ServiceContracts": "1.0.0"
+          "ServiceContracts": "1.0.0",
+          "log4net": "2.0.14"
         },
         "runtime": {
           "CommonUtils.dll": {}
@@ -2266,12 +2264,15 @@
           "CommonUtils.dll": {}
         }
       },
-      "UsersDTOs/1.0.0.0": {
+      "ServiceContracts/1.0.0": {
+        "dependencies": {
+          "CommonDTOs": "1.0.0"
+        },
         "runtime": {
-          "UsersDTOs.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ServiceContracts.dll": {}
+        },
+        "compile": {
+          "ServiceContracts.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3863,37 +3864,6 @@
           "WindowsBase.dll": {}
         },
         "compileOnly": true
-      },
-      "DTOs/1.0.0": {
-        "compileOnly": true
-      },
-      "LoggerUtils/1.0.0": {
-        "dependencies": {
-          "DTOs": "1.0.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "ServiceContracts": "1.0.0",
-          "log4net": "2.0.14"
-        },
-        "compileOnly": true
-      },
-      "ServiceContracts/1.0.0": {
-        "dependencies": {
-          "CommonDTOs": "1.0.0"
-        },
-        "compileOnly": true
-      },
-      "TraceUtils/1.0.0": {
-        "dependencies": {
-          "DTOs": "1.0.0"
-        },
-        "compileOnly": true
-      },
-      "Utils/1.0.0": {
-        "dependencies": {
-          "ServiceContracts": "1.0.0",
-          "log4net": "2.0.14"
-        },
-        "compileOnly": true
       }
     }
   },
@@ -5068,8 +5038,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "UsersDTOs/1.0.0.0": {
-      "type": "reference",
+    "ServiceContracts/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     },
@@ -6395,31 +6365,6 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DTOs/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "LoggerUtils/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ServiceContracts/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "TraceUtils/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Utils/1.0.0": {
-      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

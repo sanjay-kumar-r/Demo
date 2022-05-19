@@ -1,0 +1,11 @@
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\CustomerAPIService.exe
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\CustomerAPIService.dll
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\CustomerAPIService.deps.json
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\CustomerAPIService.runtimeconfig.json
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\CustomerAPIService.pdb
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Demo\APIGateway\CustomerAPIService\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
